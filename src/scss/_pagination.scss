@@ -1,0 +1,29 @@
+.hide {
+    display: none !important;
+  }
+
+  .anav.nav-pills {
+    background-color: #ffedc5;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0.5%;
+  }
+
+  .nav-link {
+    padding: .5rem 1rem
+  }
+
+  .nav-link:hover {
+    color: #913132;
+  }
+
+  a.nav-link.active {
+    color: #cd9f7e !important;
+    background: #cf5d53 !important;
+  }
+
+  a.nav-link.active:hover {
+    color: white !important;
+    background: #913132 !important;
+    background-size: 80%;
+  }

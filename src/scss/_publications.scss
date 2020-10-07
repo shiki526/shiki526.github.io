@@ -1,0 +1,132 @@
+.publications-page {
+
+    .title {
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+        color: $mohogany;
+        max-width: 100rem;
+        margin: auto;
+        
+    }
+
+    .subTitle {
+        font-family: $secondFont;
+        font-style: italic;
+        font-size: 1.75rem;
+        color: $mohogany;
+        padding-bottom: 1.5rem;
+    }
+
+    .author {
+        font-size: 2.25rem;
+        text-align: center !important;
+        font-family: $secondFont;
+        // font-style: italic;
+        color: $red;
+        // margin-top: -2rem;
+    }
+
+    .textBlock {
+        padding-top: 0;
+        grid-gap: 3rem;
+        color: black;
+        text-align: left;
+    }
+
+    .row   {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    @media (min-width: $tablet) {
+        .row {
+            grid-gap: 2rem;
+        }
+    }
+
+    h3 {
+        color: $mohogany;
+    }
+
+    .imgBlock {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        margin: auto;
+        width: 40rem;
+
+        img {
+            padding: 0;
+            // width: 40rem !important;
+        }
+    }
+
+    img, video {
+        padding-top: 1rem;
+        width: 100% !important;
+    }
+
+    .caption {
+        font-style: italic;
+        color: $red !important;
+        font-size: 1.5rem !important;
+    }
+
+}
+
+.italic{
+    font-style: italic !important;
+}
+
+.rightAligned {
+    text-align: right;
+}
+
+ .underline{
+     text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.publicationLink{
+    color: $mohogany !important;
+    text-decoration: underline;
+    text-align: center;
+}
+.publicationLink:hover{
+    color: $red !important;
+    text-decoration: underline;
+}
+
+// .nav.nav-pills {
+//     z-index: 0;
+//     padding-top: 1%;
+//     padding-bottom: 1%;
+//     padding-right: 0.5%;
+// }
+
+// .nav-link:hover {
+//     color: $mohogany;
+// }
+
+// a.nav-link.active {
+//     color: $brown !important;
+//     background: $red !important;
+// }
+
+// a.nav-link.active:hover {
+//     color: white !important;
+//     background: $mohogany !important;
+//     background-size: 80%;
+// }
+
+.titlecreator {
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: $mohogany;
+    max-width: 100rem;
+}

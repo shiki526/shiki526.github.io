@@ -1,0 +1,38 @@
+{
+  "name": "detestermagazinewebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.js",
+  "scripts": {
+    "dev": "parcel src/index.html src/*.html src/projects/*.html src/*.html src/components/*.html ",
+    "build": "parcel build src/index.html src/*.html src/projects/*.html src/*.html src/components/*.html  "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Detester-Magazine/DetesterMagazineWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Detester-Magazine/DetesterMagazineWebsite/issues"
+  },
+  "homepage": "https://github.com/Detester-Magazine/DetesterMagazineWebsite#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "desandro-matches-selector": "^2.0.2",
+    "ev-emitter": "^1.1.1",
+    "get-size": "^2.0.3",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.5.1",
+    "masonry-layout": "^4.2.2",
+    "menu": "^0.2.5",
+    "outlayer": "^2.1.1",
+    "parcel": "^1.12.4",
+    "slick-carousel": "^1.8.1"
+  }
+}

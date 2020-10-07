@@ -1,0 +1,122 @@
+.main-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem !important;
+  max-width: 100rem;
+  margin: auto;
+  color: $mohogany;
+  // width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .main-projects {
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-projects {
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    // grid-gap: 2rem;
+  }
+}
+
+
+.main-project-card {
+  max-width: 100rem;
+  margin: auto;
+  background-color: #fff8ea;
+  // width: 100%;
+  padding: 3rem;
+  //padding-bottom: 5srem !important;
+  border-radius: 1rem;
+}
+
+.column-text {
+  text-align: left !important;
+}
+@media (min-width: $phone) {
+  .column-text {
+    column-count: 1;
+  }
+}
+
+@media (min-width: $tablet) {
+  .column-text {
+    column-count: 2;
+    column-gap: 5rem;
+  }
+}
+
+
+.main-project-img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.main-project-text {
+  font-family: $mainFont;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.main-project-text {
+  .time {
+    font-family: $mainFont;
+    color: $red;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  .title {
+    font-style: normal;
+    font-size: 2rem;
+    font-family: $mainFont;
+    color: $mohogany;
+  }
+}
+
+.main-project a {
+  text-decoration: none !important;
+  color: $lightYellow !important;
+}
+
+.mailto a {
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: #913132 !important;
+}
+
+.mailto a:hover {
+  color: $red !important;
+}
+.titledes {
+  font-style: normal;
+  font-size: 1.75rem;
+  font-family: $secondFont;
+  color: $mohogany;
+  margin-top: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  .poem-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.bold {
+  color: $mohogany !important;
+  text-align: center;
+}
+.makecenter {
+  text-align: center !important;
+}
+.mohogany {
+  color: $mohogany !important;
+}
+.spacing {
+  margin-bottom: 3.5rem;
+}

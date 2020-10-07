@@ -1,0 +1,77 @@
+@import "./variables";
+
+form {
+  text-align: left;
+  margin-top: 3rem;
+}
+
+label {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: $mainFont;
+  color: $mohogany;
+  // color: $yellowLight;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-style: oblique;
+  font-family: $secondFont;
+  font-size: 1.5rem;
+  background-color: $lightYellow;
+  border: hidden;
+  color: $red;
+  border-radius: 0.4rem;
+}
+
+.input-submit {
+  padding: 0;
+  font-family: $mainFont;
+  font-size: 1.75rem;
+  background-color: inherit;
+  color: $yellow;
+  -moz-outline-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.input-submit {
+  background-color: $red !important;
+  border: none !important;
+  // text-transform: uppercase !important;
+  font-style: normal !important;
+  // font-weight: bold !important;
+  font-family: $mainFont;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+  padding: 1rem;
+  text-align: center;
+  width: 20rem;
+  font-size: 1.75rem;
+  color: $yellow;
+}
+
+.submit {
+  text-align: center;
+  width: 20rem;
+  margin: auto;
+}
+//submit button for newsletter
+.email {
+  display: inline-block;
+  padding-top: 1rem;
+}
+.signup {
+  width: 15rem;
+}
+
+.submit:hover .input-submit {
+  background-color: inherit !important;
+  transition: 0.15s ease-in !important;
+  color: $red;
+  outline: 0.2rem solid $mohogany !important;
+  cursor: pointer;
+}

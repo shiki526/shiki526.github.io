@@ -1,0 +1,294 @@
+@import "./variables";
+
+.about {
+
+  #ourMission {
+    background-color: $lightYellow;
+  }
+
+  // .bio-cards {
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   grid-gap: 2rem;
+  // }
+
+  #myBtnContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    
+    .btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 1.75rem;
+      padding: 0.75rem;
+    }
+  }
+
+  @media (min-width: 850px) {
+    #myBtnContainer {
+      flex-direction: row;
+
+      .btn {
+        margin-right: 0.75rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .filterDiv {
+    text-align: center;
+    display: none; /* Hidden by default */
+  }
+
+  /* The "show" class is added to the filtered elements */
+.show {
+  display: grid;
+}
+
+  .container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $tablet) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (min-width: $laptop) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  /* Style the buttons */
+
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: $lightYellow;
+  }
+
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: $yellow;
+    color: $mohogany;
+  }
+
+  .bio-card {
+    background-color: $lightYellow;
+    width: 100%;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+
+  .bio-card-content {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .bio-img img {
+    width: 100%;
+    border-radius: 0.4rem;
+  }
+
+  .bio-info {
+    font-family: $mainFont;
+    font-size: 2.5rem;
+    text-align: left;
+    color: $mohogany;
+    margin: auto;
+    display: contents;
+  }
+
+  .bio-info-role {
+    font-family: $secondFont;
+    font-size: 1.75rem;
+    color: $red;
+  }
+
+  // .bio-cards > .bio-card {
+  //     padding: 0 8px;
+  //   }
+
+  // .bio-cards:after {
+  //   content: "";
+  //   display: table;
+  //   clear: both;
+  // }
+
+  // .thumbnails {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  //   grid-gap: 1rem;
+  //   margin-top: 2rem;
+  // }
+
+  .column {
+    float: left;
+    // width: 25%;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 6rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 5rem;
+    max-width: 100rem;
+
+    img {
+      user-select: none;
+    }
+
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    font-weight: bold;
+    fill: $yellow;
+  }
+
+  .close:hover,
+  .close:focus {
+    fill: $lightYellow;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    fill: $red;
+    transition: 0.15s ease-in;
+  }
+
+  .prev:hover {
+    fill: $mohogany;
+  }
+  .next:hover {
+    fill: $mohogany;
+  }
+
+  .prev {
+    left: 0;
+    margin-left: 1.5rem;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .next {
+    right: 0;
+    margin-right: 1.5rem;
+  }
+
+  .demo {
+    opacity: 0.6;
+    transition: 0.15s ease-in;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .bio-slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    // height: 60rem;
+
+    img {
+      max-width: 30rem;
+      padding-bottom: 1rem;
+      margin: auto;
+      height: auto;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    .bio-slide {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        height: 30rem !important;
+        padding-bottom: 0;
+        padding-right: 5rem;
+        width: auto !important;
+      }
+    }
+  }
+
+  @media (min-width: $phone) {
+    .bio-slide {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        height: 30rem !important;
+        padding-bottom: 0;
+        padding-right: 5rem;
+        width: auto !important;
+      }
+    }
+  }
+  
+.mySlides {
+  .textBlock {
+    font-family: $mainFont;
+    color: $blue;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .position {
+    font-size: 2rem;
+    
+  }
+}
+
+
+  p {
+    font-family: $secondFont;
+    font-size: 1.75rem;
+    text-align: center;
+    //color: black;
+  }
+}

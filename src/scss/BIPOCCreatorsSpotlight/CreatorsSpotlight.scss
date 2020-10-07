@@ -1,0 +1,76 @@
+@import "../variables";
+
+
+.creatorsSpotlight {
+
+
+    .main-projects {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .main-project-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem !important;
+        max-width: 100rem;
+        margin: auto;
+        padding: 2rem;
+        background-color: $lightYellow;
+        // width: 100%;
+      }
+      
+      
+      @media (min-width: 800px) {
+        .main-project-card {
+          overflow: hidden;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          // img {
+          //     width: 50%;
+          // }
+
+          .textBlock {
+              font-size: 1.75rem;
+          }
+        }
+      }
+      
+      .main-creator-text {
+        font-family: $mainFont;
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 4rem;
+      }
+    
+    
+    .creator {
+      font-family: $secondFont;
+      font-weight: bold;
+      color: $mohogany;
+      font-style: normal !important;
+      font-size: 1.75rem;
+      padding: 0;
+    }
+
+    @media (min-width: $tablet) {
+        padding: 0;
+    }
+    @media (min-width: $laptop) {
+        padding: 0;
+    }
+    
+    .creator-social {
+      color: $mohogany;
+      font-weight: bold;
+      text-decoration: underline;
+      font-style: italic;
+    }
+  
+    .row {
+      display: inline !important;
+    }
+}
+
