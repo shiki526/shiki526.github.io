@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,KAEC,YAAY,CACZ,kDAAmD,CACnD,aACD","file":"styles.dab5cc8e.css","sourceRoot":"..\\src","sourcesContent":["body\r\n{\r\n\theight:950px;\r\n\tbackground: linear-gradient(135deg,#cadeeb,#B49AC9);\r\n\tcolor: #985E6D;\r\n}"]}
